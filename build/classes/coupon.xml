@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.benari.shenkar.coupon.model.Coupon" table="coupons">
+
+		<id name="id" type="int" column="Id">
+			<generator class="increment"/>
+		</id>
+
+		<property name="name">
+			<column name="Name" />
+		</property>
+		
+		<property name="price">
+			<column name="Price" />
+		</property>
+		
+		<property name="dateCreated">
+			<column name="DateCreated" />
+		</property>
+		
+		<property name="dateEnds">
+			<column name="DateEnds" />
+		</property>
+
+		<property name="categoryNumber">
+			<column name="CategoryNumber" />
+		</property>
+
+	</class>
+</hibernate-mapping>
